@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RGB">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Text_r"
+        android:textSize="20dp"
+        android:layout_above="@id/Text_g"
+        android:layout_gravity="left"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Red: 0"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Text_g"
+        android:textSize="20dp"
+        android:layout_gravity="left"
+        android:layout_above="@id/Text_b"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Green: 0"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Text_b"
+        android:textSize="20dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        android:layout_centerVertical="true"
+        android:text="Blue: 0"
+        />
+
+    <SeekBar
+        android:id="@+id/Sb_r"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Sb_g"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:max="255"
+        />
+    <SeekBar
+        android:id="@+id/Sb_g"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Sb_b"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:max="255"
+        />
+    <SeekBar
+        android:id="@+id/Sb_b"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Text_r"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:max="255"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/Text_kep"
+        android:textSize="30dp"
+        android:layout_below="@+id/Text_b"
+        android:layout_marginTop="20dp"
+
+
+    />
+
+
+
+
+
+
+
+</RelativeLayout>
